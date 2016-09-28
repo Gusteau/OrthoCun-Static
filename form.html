@@ -11,6 +11,7 @@
         <title>Sistema de administración para consultorio médico</title>
 
         <link href="assets/plugins/jquery-circliful/css/jquery.circliful.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css" rel="stylesheet">
 
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
@@ -267,7 +268,7 @@
                                 <div class="col-md-5">
                                     <form class="form-horizontal" role="form">
                                         <div class="form-group">
-                                            <label class="col-md-2 control-label">Apellido paterno*</label>
+                                            <label class="col-md-2 control-label"><code>*</code>Apellido paterno</label>
                                             <div class="col-md-10">
                                                 <input type="text" class="form-control" name="fLastName" required>
                                             </div>
@@ -279,7 +280,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-md-2 control-label">Nombre(s)*</label>
+                                            <label class="col-md-2 control-label"><code>*</code>Nombre(s)</label>
                                             <div class="col-md-10">
                                                 <input type="text" class="form-control" name="usrname" required>
                                             </div>
@@ -306,7 +307,7 @@
                                     <form class="form-horizontal" role="form">
 
                                       <div class="form-group">
-                                          <label class="col-md-2 control-label">Fecha de nacimiento*</label>
+                                          <label class="col-md-2 control-label"><code>*</code>Fecha de nacimiento</label>
                                           <div class="col-md-4">
                                               <div class="input-group">
                                                   <input type="text" name="birthday" class="form-control" placeholder="mm/dd/yyyy" id="datepicker-autoclose">
@@ -315,7 +316,7 @@
                                           </div>
                                       </div>
                                       <div class="form-group">
-                                        <label class="col-md-2 control-label">Sexo*</label>
+                                        <label class="col-md-2 control-label"><code>*</code>Sexo</label>
                                         <div class="col-md-4">
                                             <div class="input-group">
                                               <select class="form-control">
@@ -348,72 +349,72 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="card-box">
-                            <h4 class="m-t-0 header-title"><b>Facturación</b></h4>
+                            <h4 class="m-t-0 header-title"><b>Datos de facturación</b></h4>
                             <hr>
                             <div class="row">
                                 <div class="col-md-5">
                                     <form class="form-horizontal" role="form">
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">RFC</label>
-                                            <div class="col-md-10">
-                                                <input type="text" class="form-control" name="rfc">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Calle</label>
-                                            <div class="col-md-10">
-                                                <input type="text" class="form-control" name="street">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label">Colonia</label>
-                                            <div class="col-md-10">
-                                                <input type="text" class="form-control" name="Col">
-                                            </div>
-                                        </div>
 
-                                        <div class="form-group">
-                                            <label class="col-md-2 control-label" for="example-email">Estado</label>
-                                            <div class="col-md-10">
-                                                <input name="state" class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                          <label class="col-md-2 control-label">Delegación / Municipio</label>
+                                      <div class="form-group">
+                                          <label class="col-md-2 control-label">Razón social</label>
                                           <div class="col-md-10">
-                                              <input type="text" class="form-control" name="DM">
+                                              <input type="text" class="form-control" name="rs">
                                           </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="col-md-2 control-label">RFC</label>
+                                          <div class="col-md-10">
+                                              <input type="text" class="form-control" name="rfc">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                          <label class="col-md-2 control-label">Calle</label>
+                                          <div class="col-md-10">
+                                              <input type="text" class="form-control" name="street">
+                                          </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label class="col-md-2 control-label">Num. Exterior</label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" name="extNum">
                                         </div>
+                                      </div>
+                                      <div class="form-group">
+                                        <label class="col-md-2 control-label">Num. Interior</label>
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" name="intNum">
+                                        </div>
+                                      </div>
 
                                     </form>
                                 </div>
 
                                 <div class="col-md-6">
                                     <form class="form-horizontal" role="form">
-
                                       <div class="form-group">
-                                          <label class="col-md-2 control-label">Razón social</label>
+                                          <label class="col-md-2 control-label">Colonia</label>
                                           <div class="col-md-10">
-                                              <input type="text" class="form-control" name="RS">
+                                              <input type="text" class="form-control" name="colony">
                                           </div>
                                       </div>
                                       <div class="form-group">
-                                        <label class="col-md-2 control-label">Num. Exterior</label>
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" name="extNum">
-                                        </div>
-                                      </div>
-                                      <div class="form-group">
-                                        <label class="col-md-2 control-label">Num. Interior</label>
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" name="intNum">
-                                        </div>
-                                      </div>
-                                      <div class="form-group">
                                         <label class="col-md-2 control-label">C.P.</label>
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" name="CP">
+                                        <div class="col-md-2">
+                                            <input type="text" class="form-control" name="cp">
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                          <label class="col-md-2 control-label" for="example-email">Delegación / Municipio</label>
+                                          <div class="col-md-10">
+                                              <input name="dm" class="form-control">
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group">
+                                        <label class="col-md-2 control-label">Estado</label>
+                                        <div class="col-md-10">
+                                            <input type="text" class="form-control" name="state">
                                         </div>
                                       </div>
 
@@ -424,18 +425,24 @@
                                           </div>
                                       </div>
                                       <hr>
+
+
+
                                       <div class="form-group">
                                         <div class="col-md-7">
                                         </div>
                                           <div class="col-md-2">
-                                              <button type="button" class="btn btn-success btn-rounded w-md waves-effect waves-light m-b-5" name="save">Guardar</button>
+                                              <button type="button" class="btn btn-primary btn-lg btn-block w-md waves-effect waves-light m-b-5" name="save">Guardar</button>
                                           </div>
                                           <div class="col-md-1">
                                           </div>
                                           <div class="col-md-2">
-                                              <button type="button" class="btn btn-inverse btn-rounded w-md waves-effect waves-light m-b-5" name="cancel">Cancelar</button>
+                                              <button type="button" class="btn btn-inverse btn-lg btn-block w-md waves-effect waves-light m-b-5" name="cancel">Cancelar</button>
                                           </div>
                                       </div>
+
+
+
                                     </form>
                                 </div>
                             </div>
