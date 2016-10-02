@@ -1,0 +1,17 @@
+titulo: nueva consulta
+
+3 campos de text area llamados:
+datos subjetivos
+datos objetivos
+plan
+
+
+
+dos botones de guardar y cancelar
+
+-----------------------------
+
+esto pa otro momento
+
+campo de tipo file para cargar las imagenes solo archivos jpg
+
